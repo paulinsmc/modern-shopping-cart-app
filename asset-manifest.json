@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/modern-shopping-cart-app/static/css/main.2789c260.css",
+    "main.js": "/modern-shopping-cart-app/static/js/main.48baf3ea.js",
+    "index.html": "/modern-shopping-cart-app/index.html",
+    "main.2789c260.css.map": "/modern-shopping-cart-app/static/css/main.2789c260.css.map",
+    "main.48baf3ea.js.map": "/modern-shopping-cart-app/static/js/main.48baf3ea.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.2789c260.css",
+    "static/js/main.48baf3ea.js"
+  ]
+}
