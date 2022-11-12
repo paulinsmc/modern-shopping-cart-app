@@ -1,38 +1,100 @@
-.App {
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.logo a {
+  text-decoration: none;
+  color: #fff;
+}
+.cart {
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+.cart-value {
+  font-size: 1.3rem;
+}
+.cart-image {
+  width: 100%;
+  max-width: 100px;
+  object-fit: cover;
+  display: block;
+}
+.cart-button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.instock-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+  padding-bottom: 1rem;
+}
+.purchase-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem;
+}
+.purchase-btn {
+  width: 100%;
+  background-color: #9b0e44;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 0;
+}
+.purchase-btn a {
+  text-decoration: none;
+  color: #fff;
 }
 
-.App-link {
-  color: #61dafb;
+.product-image {
+  width: 100%;
+  max-width: 250px;
+  object-fit: cover;
+  display: block;
+  margin-bottom: 1rem;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.addToCartBtn {
+  background-color: #9b0e44;
+  color: #fff;
+  font-size: 1.2rem;
+  font-weight: bold;
+  border: 0;
+}
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 60px;
+  background-color: #9b0e44;
+  color: #fff;
+  width: 100%;
+  padding: 1rem;
+}
+.footer-list{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  list-style: none;
+  font-size: 1rem;
+  font-weight: bold;
+  margin: 15px 0;
+}
+.footer-icons{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #fff;
+  color: #9b0e44;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  cursor: pointer;
 }

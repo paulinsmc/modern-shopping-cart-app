@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "bootstrap/dist/css/bootstrap.min.css";
+import Header from "./components/Header";
+import MainContent from "./components/MainContent";
+import { ProductProvider } from "./ProductContext";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Success from "./Success";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <ProductProvider>
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route index element={<MainContent />} />
+          <Route path="/success" element={<Success />} />
+          <Route
+            path="*"
+            element={
+              <h1
+                style={{
+                  textAlign: "center",
+                  color: "crimson",
+                  marginTop: "50px",
+                }}
+              >
+                Please this page not found!!
+              </h1>
+            }
+          />
+        </Routes>
+      </BrowserRouter>
+    </ProductProvider>
   );
-}
+};
 
 export default App;
